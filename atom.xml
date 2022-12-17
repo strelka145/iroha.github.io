@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Blog</title>
+  
+  
+  <link href="https://strelka145.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://strelka145.github.io/"/>
+  <updated>2022-12-17T03:13:27.795Z</updated>
+  <id>https://strelka145.github.io/</id>
+  
+  <author>
+    <name>iroha_nano</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>test post</title>
+    <link href="https://strelka145.github.io/2022/12/17/test-post/"/>
+    <id>https://strelka145.github.io/2022/12/17/test-post/</id>
+    <published>2022-12-17T03:13:27.000Z</published>
+    <updated>2022-12-17T03:13:27.795Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+</feed>
