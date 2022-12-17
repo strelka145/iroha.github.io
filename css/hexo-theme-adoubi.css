@@ -159,9 +159,10 @@ pre .javascript .function {
 .content,
 .footer,
 .archive-item,
+.home-image,
 .github-image,
-.email-image,
-.subscribe-image {
+.mastodon-image,
+.twitter-image {
   opacity: 0;
   -webkit-animation: fadeIn ease-in 1;
   -moz-animation: fadeIn ease-in 1;
@@ -282,19 +283,25 @@ strong {
   margin-top: 20px;
   text-align: center;
 }
+.home-image {
+  height: 35px;
+  -webkit-animation-delay: 0.4s;
+  -moz-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
 .github-image {
   height: 35px;
   -webkit-animation-delay: 0.6s;
   -moz-animation-delay: 0.6s;
   animation-delay: 0.6s;
 }
-.email-image {
+.mastodon-image {
   height: 35px;
   -webkit-animation-delay: 0.8s;
   -moz-animation-delay: 0.8s;
   animation-delay: 0.8s;
 }
-.subscribe-image {
+.twitter-image {
   height: 35px;
   -webkit-animation-delay: 1s;
   -moz-animation-delay: 1s;
