@@ -6,7 +6,7 @@
   <link href="https://strelka145.github.io/iroha.github.io/atom.xml" rel="self"/>
   
   <link href="https://strelka145.github.io/iroha.github.io/"/>
-  <updated>2022-12-17T03:13:27.795Z</updated>
+  <updated>2022-12-17T21:22:48.000Z</updated>
   <id>https://strelka145.github.io/iroha.github.io/</id>
   
   <author>
@@ -17,12 +17,16 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>test post</title>
+    <title>ノートとかに使う簡単な図を描くツール</title>
     <link href="https://strelka145.github.io/iroha.github.io/2022/12/17/test-post/"/>
     <id>https://strelka145.github.io/iroha.github.io/2022/12/17/test-post/</id>
     <published>2022-12-17T03:13:27.000Z</published>
-    <updated>2022-12-17T03:13:27.795Z</updated>
+    <updated>2022-12-17T21:22:48.000Z</updated>
     
+    <content type="html"><![CDATA[<p>これは「Kyoto.bioinfo Advent Calendar 2022」の記事です。（あんまりバイオインフォじゃないですが先輩に「人が少ないから……」っていわれたので参加させていただきました。）  </p><div class="blogcardfu" style="width:auto;max-width:9999px;border:1px solid #E0E0E0;border-radius:3px;margin:10px 0;padding:15px;line-height:1.4;text-align:left;background:#FFFFFF;"><a href="https://adventar.org/calendars/8449" target="_blank" style="display:block;text-decoration:none;"><span class="blogcardfu-image" style="float:right;width:100px;padding:0 0 0 10px;margin:0 0 5px 5px;"><img src="https://images.weserv.nl/?w=100&url=ssl:adventar.org/og_image.png" width="100" style="width:100%;height:auto;max-height:100px;min-width:0;border:0 none;margin:0;"></span><br style="display:none"><span class="blogcardfu-title" style="font-size:112.5%;font-weight:700;color:#333333;margin:0 0 5px 0;">Kyoto.bioinfo Advent Calendar 2022 - Adventar</span><br><span class="blogcardfu-content" style="font-size:87.5%;font-weight:400;color:#666666;">Anyone who has an interest in Bioinformatics and Kyoto is welcome to join our calendar!  京都とバイオインフォマティクスが好きな人なら誰でも参加可能です。 バイオインフォマティクスのアドベントカレンダーを書いて、素敵な2023年を迎えましょう。</span><br><span style="clear:both;display:block;overflow:hidden;height:0;">&nbsp;</span></a></div><h1><span id="j">j</span></h1>]]></content>
+    
+    
+    <summary type="html">test</summary>
     
     
     
