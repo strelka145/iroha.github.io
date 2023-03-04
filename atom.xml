@@ -6,7 +6,7 @@
   <link href="https://strelka145.github.io/iroha.github.io/atom.xml" rel="self"/>
   
   <link href="https://strelka145.github.io/iroha.github.io/"/>
-  <updated>2022-12-19T07:18:54.000Z</updated>
+  <updated>2023-03-04T07:31:25.054Z</updated>
   <id>https://strelka145.github.io/iroha.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>時間を記録するアプリを作成した</title>
+    <link href="https://strelka145.github.io/iroha.github.io/2023/03/04/Corgi-app/"/>
+    <id>https://strelka145.github.io/iroha.github.io/2023/03/04/Corgi-app/</id>
+    <published>2023-03-04T05:58:43.000Z</published>
+    <updated>2023-03-04T07:31:25.054Z</updated>
+    
+    <content type="html"><![CDATA[<p>ワンクリックで時間とメモを記録するだけのツールを作成しました。</p><h1><span id="はじめに">はじめに</span></h1><p>実験をしている時にちょっと時間を記録しておきたくなる場面があります。今までは紙にメモをしたりslackなどを使って記録していました。しかしslackでは他のメモにまぎれて記録を探すのが面倒なので時間を記録しておく専用のアプリを作ってみました。</p><div class="blogcardfu" style="width:auto;max-width:9999px;border:1px solid #E0E0E0;border-radius:3px;margin:10px 0;padding:15px;line-height:1.4;text-align:left;background:#FFFFFF;"><a href="https://github.com/strelka145/Corgi" target="_blank" style="display:block;text-decoration:none;"><span class="blogcardfu-image" style="float:right;width:100px;padding:0 0 0 10px;margin:0 0 5px 5px;"><img src="https://images.weserv.nl/?w=100&url=ssl:opengraph.githubassets.com/19b08988b05a5b716c716f53b2ce45ee86c46e415afffcd1f50b4aad421c6c8a/strelka145/Corgi" width="100" style="width:100%;height:auto;max-height:100px;min-width:0;border:0 none;margin:0;"></span><br style="display:none"><span class="blogcardfu-title" style="font-size:112.5%;font-weight:700;color:#333333;margin:0 0 5px 0;">GitHub - strelka145/Corgi: Tools for recording time with one click.</span><br><span class="blogcardfu-content" style="font-size:87.5%;font-weight:400;color:#666666;">A simple application that records notes and time with a single click. Contribute to strelka145/Corgi development by creating an account on GitHub.</span><br><span style="clear:both;display:block;overflow:hidden;height:0;">&nbsp;</span></a></div><h1><span id="アプリについて">アプリについて</span></h1><p><img src="/iroha.github.io/images/corgi_screenshot.png" alt="記録アプリCorgiのスクリーンショット"></p><p>シンプルなのでとくに説明も必要ないと思います。electronで開発したのでWindowsに限らずLinuxやMacでも利用できます。  </p><p>コードは署名されていないため一部環境ではインストールできないかもしてませんその場合はreadmeのBuildにしたがって自分でビルドしてみてください。</p><h1><span id="ダウンロード">ダウンロード</span></h1><div class="blogcardfu" style="width:auto;max-width:9999px;border:1px solid #E0E0E0;border-radius:3px;margin:10px 0;padding:15px;line-height:1.4;text-align:left;background:#FFFFFF;"><a href="https://github.com/strelka145/Corgi/releases/latest" target="_blank" style="display:block;text-decoration:none;"><span class="blogcardfu-image" style="float:right;width:100px;padding:0 0 0 10px;margin:0 0 5px 5px;"><img src="https://images.weserv.nl/?w=100&url=ssl:opengraph.githubassets.com/6183f795035f269efce021301d680822e829e1d62043cd7ff69ef4e07a3365f3/strelka145/Corgi/releases/latest" width="100" style="width:100%;height:auto;max-height:100px;min-width:0;border:0 none;margin:0;"></span><br style="display:none"><span class="blogcardfu-title" style="font-size:112.5%;font-weight:700;color:#333333;margin:0 0 5px 0;">Release · strelka145/Corgi</span><br><span class="blogcardfu-content" style="font-size:87.5%;font-weight:400;color:#666666;">A simple application that records notes and time with a single click.</span><br><span style="clear:both;display:block;overflow:hidden;height:0;">&nbsp;</span></a></div><h1><span id="今後">今後</span></h1><p>クラウドサービスを利用して他のコンピューターと記録内容の同期とか、記録内容の書き出しとかしてみたいなと思っています。<br>あと内部的にliタグのidを乱数で生成しています。40文字くらいなので各要素についてほぼ固有のIDが付与されているとみなせられますがハッシュを用いた方がまだ安全な気がするので可能であれば直していきたいです。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;ワンクリックで時間とメモを記録するだけのツールを作成しました。&lt;/p&gt;
+&lt;h1&gt;&lt;span id=&quot;はじめに&quot;&gt;はじめに&lt;/span&gt;&lt;/h1&gt;&lt;p&gt;実験をしている時にちょっと時間を記録しておきたくなる場面があります。今までは紙にメモをしたりslackなどを使って記録してい</summary>
+      
+    
+    
+    
+    
+    <category term="作成アプリ" scheme="https://strelka145.github.io/iroha.github.io/tags/%E4%BD%9C%E6%88%90%E3%82%A2%E3%83%97%E3%83%AA/"/>
+    
+    <category term="Corgi" scheme="https://strelka145.github.io/iroha.github.io/tags/Corgi/"/>
+    
+  </entry>
   
   <entry>
     <title>ノートとかに使う簡単な図を描くツール</title>
