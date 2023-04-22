@@ -6,7 +6,7 @@
   <link href="https://strelka145.github.io/iroha.github.io/atom.xml" rel="self"/>
   
   <link href="https://strelka145.github.io/iroha.github.io/"/>
-  <updated>2023-03-12T16:05:24.017Z</updated>
+  <updated>2023-04-22T07:17:49.082Z</updated>
   <id>https://strelka145.github.io/iroha.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Godot4でSpriteのマスクをする方法</title>
+    <link href="https://strelka145.github.io/iroha.github.io/2023/04/22/godot4-mask/"/>
+    <id>https://strelka145.github.io/iroha.github.io/2023/04/22/godot4-mask/</id>
+    <published>2023-04-22T07:10:08.000Z</published>
+    <updated>2023-04-22T07:17:49.082Z</updated>
+    
+    <content type="html"><![CDATA[<p>Godot4でSpriteのマスクをする方法</p><h1><span id="はじめに">はじめに</span></h1><p>ゲームを作っていると「スプライトの端をぼかしたい」とか「スプライトを複雑な形に切り抜きたい」ということがあると思います。そこで利用できるのが「マスク機能」です。</p><p>Godot4でSpriteのマスクをするための方法を探していたところ<br><a href="https://2dgames.jp/godot-mask/">https://2dgames.jp/godot-mask/</a>　このサイトを見かけましたが上手くいかなかったので別の方法を探しました。<br>結果以下のtweetにたどり着き真似をすると上手くいったので備忘録として記録しておきます(ただでさえGodot4の日本語情報は少ないので)。</p><blockquote class="twitter-tweet"><p lang="en" dir="ltr">I noticed you can already kinda do this if you put the parent to &quot;Clip+Draw&quot; and the children to &quot;Clip Only&quot; <a href="https://t.co/0pUBg03emN">pic.twitter.com/0pUBg03emN</a></p>&mdash; Sander Vanhove (@SanderVhove) <a href="https://twitter.com/SanderVhove/status/1593326596290756610?ref_src=twsrc%5Etfw">November 17, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script><h1><span id="マスク画像">マスク画像</span></h1><p>今回は分かりやすくこのような部分的にグラデーション？のかかったマスク画像を例に使ってみようと思います。</p><p><img src="https://filedn.eu/lvYgiUks5MDjIQL8MIRrDf4/blog/mask/mask.png" alt="マスク画像" title="マスク画像"></p><p>最終的にはこの白い部分に重なっている所のみ表示され、グラデーションのかかっている部分ではグラデーションがかかって表示されます。</p><h1><span id="素材の説明">素材の説明</span></h1><ul><li>mask.png<ul><li>上のマスク画像のことアルファチャンネルに応じてマスクされる。</li></ul></li><li>image.svg<ul><li>マスクを適用される画像</li></ul></li></ul><h1><span id="素材の配置">素材の配置</span></h1><p>画像のようにマスク画像を設定したスプライトの子要素としてマスクを適用したい画像のスプライトを配置します。<br><img src="https://filedn.eu/lvYgiUks5MDjIQL8MIRrDf4/blog/mask/order.png" alt="配置" title="配置"></p><h1><span id="設定">設定</span></h1><h2><span id="マスク">マスク</span></h2><p>maskスプライトのCanvasItemのClip ChildrenをClip + Drawに設定します。<br><img src="https://filedn.eu/lvYgiUks5MDjIQL8MIRrDf4/blog/mask/parent.png" alt="マスク設定" title="マスク設定"></p><h2><span id="画像">画像</span></h2><p>imageスプライトのCanvasItemのClip ChildrenをClip Onlyに設定します。<br><img src="https://filedn.eu/lvYgiUks5MDjIQL8MIRrDf4/blog/mask/child.png" alt="画像設定" title="画像設定"></p><h1><span id="結果">結果</span></h1><p>最終的にはこんな感じに表示されます。</p><p><img src="https://filedn.eu/lvYgiUks5MDjIQL8MIRrDf4/blog/mask/Animation.gif" alt="結果１" title="結果１"></p><br><p><img src="https://filedn.eu/lvYgiUks5MDjIQL8MIRrDf4/blog/mask/Animation2.gif" alt="結果２" title="結果２"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;Godot4でSpriteのマスクをする方法&lt;/p&gt;
+&lt;h1&gt;&lt;span id=&quot;はじめに&quot;&gt;はじめに&lt;/span&gt;&lt;/h1&gt;&lt;p&gt;ゲームを作っていると「スプライトの端をぼかしたい」とか「スプライトを複雑な形に切り抜きたい」ということがあると思います。そこで利用できるのが「</summary>
+      
+    
+    
+    
+    
+    <category term="Godot4" scheme="https://strelka145.github.io/iroha.github.io/tags/Godot4/"/>
+    
+  </entry>
   
   <entry>
     <title>時間を記録するアプリを作成した</title>

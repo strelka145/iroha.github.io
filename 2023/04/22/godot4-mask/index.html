@@ -1,0 +1,29 @@
+<!DOCTYPE html><html lang="ja"><head prefix="og: https://ogp.me/ns#"><meta charset="UTF-8"><title>Godot4でSpriteのマスクをする方法</title><link rel="stylesheet" href="/iroha.github.io/css/normalize.css"><link rel="stylesheet" href="/iroha.github.io/css/heti.min.css"><meta property="og:type" content="article"><meta property="og:title" content="Godot4でSpriteのマスクをする方法"><meta property="og:description" content="&lt;p&gt;Godot4でSpriteのマスクをする方法&lt;/p&gt;
+&lt;h1&gt;&lt;span id=&quot;はじめに&quot;&gt;はじめに&lt;/span&gt;&lt;/h1&gt;&lt;p&gt;ゲームを作っていると「スプライトの端をぼかしたい」とか「スプライトを複雑な形に切り抜きたい」ということがあると思います。そこで利用できるのが「マスク機能」です。&lt;/p&gt;
+&lt;p&gt;Godot4でSpriteのマスクをするための方法を探していたところ&lt;br&gt;&lt;a..."><meta property="og:url" content="https://strelka145.github.io/iroha.github.io/2023/04/22/godot4-mask/index.html"><meta property="og:site_name" content="Blog"><meta property="og:article:author" content="iroha_nano"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://github.com/strelka145/iroha.github.io/raw/main/images/icon.jpg"><meta property="twitter:card" content="summary"><link rel="stylesheet" href="https://strelka145.github.io/iroha.github.io/css/hexo-theme-adoubi.css"><link rel="icon" href="/iroha.github.io/images/favicon.ico"><meta name="generator" content="Hexo 6.3.0"></head><body><div class="header"><a class="home-link" href="/iroha.github.io/"><img class="home-image" src="/iroha.github.io/images/home_small.png"></a><a class="github-link" target="_blank" rel="noopener" href="https://github.com/strelka145"><img class="github-image" src="/iroha.github.io/images/github_logo_small.png"></a><a class="mastodon-link" target="_blank" rel="noopener" href="https://mastodon.irohanano.nl/@iroha_nano145"><img class="mastodon-image" src="/iroha.github.io/images/mastodon_logo_small.png"></a><a class="twitter-link" target="_blank" rel="noopener" href="https://twitter.com/iroha_nano145"><img class="twitter-image" src="/iroha.github.io/images/twitter_small.png"></a></div><div class="content"><div class="post-item"></div><h2 class="post-title-wrapper"><p class="post-title">Godot4でSpriteのマスクをする方法</p></h2><div class="post-date"><time datetime="2023-04-22T07:10:08.000Z">2023-04-22</time></div><div class="post-content"><p>Godot4でSpriteのマスクをする方法</p>
+<h1><span id="はじめに">はじめに</span></h1><p>ゲームを作っていると「スプライトの端をぼかしたい」とか「スプライトを複雑な形に切り抜きたい」ということがあると思います。そこで利用できるのが「マスク機能」です。</p>
+<p>Godot4でSpriteのマスクをするための方法を探していたところ<br><a target="_blank" rel="noopener" href="https://2dgames.jp/godot-mask/">https://2dgames.jp/godot-mask/</a>　このサイトを見かけましたが上手くいかなかったので別の方法を探しました。<br>結果以下のtweetにたどり着き真似をすると上手くいったので備忘録として記録しておきます(ただでさえGodot4の日本語情報は少ないので)。</p>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">I noticed you can already kinda do this if you put the parent to &quot;Clip+Draw&quot; and the children to &quot;Clip Only&quot; <a target="_blank" rel="noopener" href="https://t.co/0pUBg03emN">pic.twitter.com/0pUBg03emN</a></p>&mdash; Sander Vanhove (@SanderVhove) <a target="_blank" rel="noopener" href="https://twitter.com/SanderVhove/status/1593326596290756610?ref_src=twsrc%5Etfw">November 17, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<h1><span id="マスク画像">マスク画像</span></h1><p>今回は分かりやすくこのような部分的にグラデーション？のかかったマスク画像を例に使ってみようと思います。</p>
+<p><img src="https://filedn.eu/lvYgiUks5MDjIQL8MIRrDf4/blog/mask/mask.png" alt="マスク画像" title="マスク画像"></p>
+<p>最終的にはこの白い部分に重なっている所のみ表示され、グラデーションのかかっている部分ではグラデーションがかかって表示されます。</p>
+<h1><span id="素材の説明">素材の説明</span></h1><ul>
+<li>mask.png<ul>
+<li>上のマスク画像のことアルファチャンネルに応じてマスクされる。</li>
+</ul>
+</li>
+<li>image.svg<ul>
+<li>マスクを適用される画像</li>
+</ul>
+</li>
+</ul>
+<h1><span id="素材の配置">素材の配置</span></h1><p>画像のようにマスク画像を設定したスプライトの子要素としてマスクを適用したい画像のスプライトを配置します。<br><img src="https://filedn.eu/lvYgiUks5MDjIQL8MIRrDf4/blog/mask/order.png" alt="配置" title="配置"></p>
+<h1><span id="設定">設定</span></h1><h2><span id="マスク">マスク</span></h2><p>maskスプライトのCanvasItemのClip ChildrenをClip + Drawに設定します。<br><img src="https://filedn.eu/lvYgiUks5MDjIQL8MIRrDf4/blog/mask/parent.png" alt="マスク設定" title="マスク設定"></p>
+<h2><span id="画像">画像</span></h2><p>imageスプライトのCanvasItemのClip ChildrenをClip Onlyに設定します。<br><img src="https://filedn.eu/lvYgiUks5MDjIQL8MIRrDf4/blog/mask/child.png" alt="画像設定" title="画像設定"></p>
+<h1><span id="結果">結果</span></h1><p>最終的にはこんな感じに表示されます。</p>
+<p><img src="https://filedn.eu/lvYgiUks5MDjIQL8MIRrDf4/blog/mask/Animation.gif" alt="結果１" title="結果１"></p>
+<br>
+
+<p><img src="https://filedn.eu/lvYgiUks5MDjIQL8MIRrDf4/blog/mask/Animation2.gif" alt="結果２" title="結果２"></p>
+</div></div><div class="footer"><div class="footer-copyright">Theme By<a target="_blank" rel="noopener" href="https://github.com/shinux/hexo-theme-adoubi">Adoubi</a> , Powered By Hexo.</div></div></body></html>
